@@ -11,7 +11,7 @@
 
 ## Demo Video
 
-📹 **[Watch the 1-minute walkthrough →](YOUR_YOUTUBE_OR_DRIVE_LINK_HERE)**
+[Watch the 1-minute walkthrough →](https://drive.google.com/file/d/1jiulEbQDjJ6rPVO8MR6uch1hGKKjCge9/view?usp=drive_link)
 
 ---
 
@@ -190,18 +190,18 @@ ViT-B/32 is the sweet spot for throughput vs quality. The code is model-agnostic
 
 ### 3. Vector Store — FAISS
 
-**Considered**: FAISS, ChromaDB, Qdrant, pgvector, Milvus
+Considered: FAISS, ChromaDB, Qdrant, pgvector, Milvus
 
-**Chosen**: FAISS (Facebook AI Similarity Search)
+Chosen: FAISS (Facebook AI Similarity Search)
 
-**Why**:
+Why:
 - Zero external process/server required — runs in-process
 - `IndexFlatIP` gives **exact** cosine search for archives up to ~200k frames (~400 MB RAM)
 - `IndexIVFFlat` provides sub-linear ANN search for larger archives
 - Battle-tested at scale (used in production at Meta, Airbnb, etc.)
 - GPU acceleration available via `faiss-gpu` with zero code changes
 
-**Trade-off vs Qdrant/ChromaDB**: FAISS has no built-in metadata filtering — we implement this as a post-fetch filter. For production at >1M frames, a hybrid store (FAISS for vectors + SQLite for metadata) would be preferable.
+Trade-off vs Qdrant/ChromaDB**: FAISS has no built-in metadata filtering — we implement this as a post-fetch filter. For production at >1M frames, a hybrid store (FAISS for vectors + SQLite for metadata) would be preferable.
 
 ---
 
@@ -411,9 +411,6 @@ Implemented. Two-stage retrieval with exact cosine re-scoring and temporal coher
 
 ### ✅ Evaluation protocol
 Full Precision@K, Recall@K, MRR, HitRate@K with configurable timestamp tolerance.
-
-### ✅ Beautiful web UI
-Dark industrial aesthetic; live thumbnail grid; time filter controls; index management; export buttons.
 
 ### 🔬 What else I would try with more time
 
