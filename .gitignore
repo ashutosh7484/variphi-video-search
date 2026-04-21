@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Data / indices (too large for git)
+indices/*.faiss
+indices/*.meta.json
+thumbnails/
+logs/
+
+# Results (generated at runtime)
+results/*.json
+results/*.csv
+results/*.html
+
+# Streamlit
+.streamlit/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model cache
+.cache/
+*.pt
+*.pth
+
+# Keep directory stubs
+!indices/.gitkeep
+!thumbnails/.gitkeep
+!results/.gitkeep
+!logs/.gitkeep

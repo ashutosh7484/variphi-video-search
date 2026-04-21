@@ -1,0 +1,27 @@
+[
+  {
+    "query": "person walking through the corridor",
+    "timestamps_sec": [12.0, 145.5, 302.0],
+    "notes": "Three instances of solo pedestrian in main corridor"
+  },
+  {
+    "query": "two people talking near a table",
+    "timestamps_sec": [78.0, 450.0],
+    "notes": "Identified manually from CCTV review"
+  },
+  {
+    "query": "empty room with no people",
+    "timestamps_sec": [300.0, 420.0, 600.0],
+    "notes": "Between shift changes"
+  },
+  {
+    "query": "person carrying a bag",
+    "timestamps_sec": [23.5, 189.0],
+    "notes": ""
+  },
+  {
+    "query": "bright outdoor scene",
+    "timestamps_sec": [500.0],
+    "notes": "Only visible through window at timestamp"
+  }
+]
